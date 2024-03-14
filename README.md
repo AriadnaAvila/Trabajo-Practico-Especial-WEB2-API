@@ -42,24 +42,24 @@ Se recomienda utilizar POSTMAN para probar cada endpoint a continuación.
 
 En este caso utilizaríamos un Endpoint GET para ver toda la tabla:
 ```
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas
 
-    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles 
+    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles 
 ```
 
 ### - Obtener por ID específico
 
 En este caso utilizaríamos un Endpoint GET para ver una prenda o detalle por un ID específico:
 ```
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/id
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/id
 
-    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/id 
+    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/id 
 ```
 
 Un ejemplo de cada uno seria:
 ```
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/29
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/5
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/29
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/5
 ```
 
 ### - Eliminar por ID específico
@@ -67,15 +67,15 @@ Un ejemplo de cada uno seria:
 En este caso utilizaríamos un Endpoint DELETE para eliminar una prenda o detalle por un ID específico:
 
 ```
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/id
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/id
 
-    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/id 
+    detallesprenda: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/id 
 ```
 
 Un ejemplo de cada uno seria:
 ```
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/29
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/5
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/29
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/5
 ```
 
 ### - Agregar una prenda o un detalle de una prenda
@@ -83,7 +83,7 @@ Un ejemplo de cada uno seria:
 En este caso utilizaríamos un Endpoint POST para agregar una prenda o un detalle de una prenda (no es necesario agregar un id ya todavía no se creó el mismo):
 
 ```
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas
 
 Por ejemplo:
     {
@@ -93,7 +93,7 @@ Por ejemplo:
         "rebaja": 24
     }
 
-    tabladetalles: http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles
+    tabladetalles: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles
 
 Por ejemplo:
     {
@@ -109,11 +109,11 @@ Por ejemplo:
 En este caso utilizaríamos un Endpoint PUT Para editar la prenda o el detalle (lo único que no se podrá editar son los ID):
 
 ```
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/id
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/id
 
 Por ejemplo:
 
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/prendas/29
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/prendas/29
 
     {
         "prenda": "Remera Sentinels",
@@ -122,11 +122,11 @@ Por ejemplo:
         "rebaja": 24
     }
 
-    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/id
+    tablaprendas: http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/id
 
 Por ejemplo:
 
-    http://localhost/TP-WEB-2-FINAL-LIBRE/api/detalles/5
+    http://localhost/TP-WEB-2-FINAL-LIBRE-API/api/detalles/5
 
     {
     "talle": "S",
